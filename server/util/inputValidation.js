@@ -16,7 +16,6 @@ const validateUser = user => {
 }
 
 // signup content validation
-
 const validateSignupUser = user => {
   const schema = {
     firstname : joi.string().min(3).required(),
