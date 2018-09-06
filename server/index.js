@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import mongoose from 'mongoose';
 import morgan from 'morgan';
 import bodyParser from 'body-parser';
-import { db, secret } from './config/database';
+import { db } from './config/database';
 import { apiRouter } from './routes';
 
 const app = express();

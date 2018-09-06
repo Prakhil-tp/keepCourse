@@ -50,11 +50,7 @@ const createUser = (newUser, next) => {
 
 // password comparison
 const comparePassword = (inputPassword, hashedPassword, next) => {
-  bcrypt.compare(inputPassword, hashedPassword, compareResult);
-  const compareResult = (err, isMatch) => {
-   if(err) throw err; 
-    next(null, isMatch);
-  }
+  bcrypt.compare(inputPassword, hashedPassword, next);
 }
 
 export { User, getUserById, getUserByEmail, createUser, comparePassword };

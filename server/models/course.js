@@ -25,7 +25,7 @@ const getCourseById = (id, next) => {
 }
 
 const updateCourse = (id, upCourse, next) => {
-  Course.update({ id: id }, course, next);
+  Course.update({ id }, course, next);
 }
 
 const deleteCourseById = (id, next) => {
